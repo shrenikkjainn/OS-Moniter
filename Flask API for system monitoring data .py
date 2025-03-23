@@ -11,6 +11,6 @@ def get_system_status():
         "disk_usage": psutil.disk_usage('/').percent
     }
     return jsonify(status)
-
+    
 if __name__ == '__main__':
     app.run(debug=True)
